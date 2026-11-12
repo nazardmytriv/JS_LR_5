@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторна робота — DOM та події (варіант 5)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Робота з DOM. Обробка подій</h1>
+
+  <section>
+    <h2>Завдання 1. Температура: Фаренгейт ↔ Цельсій</h2>
+    <label>Температура за Фаренгейтом:
+      <input type="text" id="fahrenheit" placeholder="°F">
+    </label>
+    <label>Температура за Цельсієм:
+      <input type="text" id="celsius" placeholder="°C">
+    </label>
+  </section>
+
+  <section>
+    <h2>Завдання 2. Таблиця множення (текстове поле)</h2>
+    <div class="score" id="score2">Рахунок: 0 / 0</div>
+    <button id="next2">Наступне завдання</button>
+    <div class="task" id="task2"></div>
+    <input type="text" id="answer2" autocomplete="off">
+    <button id="check2">Перевірити</button>
+    <div class="result" id="result2"></div>
+  </section>
+
+  <section>
+    <h2>Завдання 3. Таблиця множення (радіокнопки)</h2>
+    <div class="score" id="score3">Рахунок: 0 / 0</div>
+    <button id="next3">Наступне завдання</button>
+    <div class="task" id="task3"></div>
+    <div id="options3" class="options"></div>
+    <div class="result" id="result3"></div>
+  </section>
+
+  <section>
+    <h2>Завдання 4. Ротатор зображень (ноутбуки)</h2>
+    <div id="rotator"></div>
+  </section>
+
+  <section>
+    <h2>Завдання 5. Captcha</h2>
+    <div id="captcha"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body { font-family: Arial, sans-serif; max-width: 720px; margin: 20px auto; padding: 0 12px; color: #222; }
+h1 { text-align: center; }
+section { border: 1px solid #ccc; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; background: #fafafa; }
+h2 { margin-top: 0; font-size: 18px; }
+label { display: block; margin: 8px 0; }
+input[type=text] { padding: 5px 8px; font-size: 16px; }
+button { padding: 5px 12px; font-size: 15px; cursor: pointer; margin: 4px 0; }
+.score { font-weight: bold; margin-bottom: 6px; }
+.task { font-size: 22px; margin: 10px 0; }
+.result { margin-top: 8px; min-height: 22px; font-weight: bold; }
+.result.ok, .msg.ok { color: #1a8a2e; }
+.result.bad, .msg.bad { color: #c62828; }
+.options label { display: inline-block; margin-right: 16px; font-size: 18px; cursor: pointer; }
+
+/* Ротатор */
+.rotator { width: 520px; max-width: 100%; text-align: center; }
+.rotator .counter { height: 26px; line-height: 26px; font-weight: bold; }
+.rotator .frame { width: 100%; height: 330px; background: #eee; border: 1px solid #bbb;
+                  display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.rotator .frame img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.rotator .nav { display: flex; justify-content: space-between; height: 28px; line-height: 28px; }
+.rotator .nav a { color: #0645ad; cursor: pointer; text-decoration: underline; }
+.rotator .info { height: 70px; overflow: hidden; }
+.rotator .info .title { font-weight: bold; }
+
+/* Captcha */
+.captcha-digits { display: flex; gap: 14px; padding: 10px; background: #fff; border: 1px solid #bbb;
+                  width: fit-content; margin-bottom: 10px; }
+.captcha-digit { display: grid; grid-template-columns: repeat(5, 6px); grid-auto-rows: 6px; gap: 1px; }
+.captcha-digit span { display: block; width: 6px; height: 6px; }
+.captcha-digit span.on { background: #1a237e; }
+.captcha .msg { margin-top: 8px; min-height: 22px; font-weight: bold; }
